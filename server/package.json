@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npx nodemon"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
