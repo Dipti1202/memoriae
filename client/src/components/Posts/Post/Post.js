@@ -16,7 +16,6 @@ const Post = ({ post, setCurrentId }) => {
 
     const classes = useStyles()
     const user=JSON.parse(localStorage.getItem("profile"))
-    useEffect(()=>{},[user])
     const handleClickScroll=()=>{
         const element = document.getElementById("createForm");
         if(element){
