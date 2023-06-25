@@ -60,7 +60,7 @@ const darkTheme=createTheme({ palette: { mode: 'dark' } })
         setPostData({title:'',message:'',tags:'',selectedFile:''})
     }
     return(
-        <Paper className={classes.paper} sx={{}}>
+        <Paper className={classes.paper} id="createForm" sx={{}}>
             <form autoComplete='off' className={classes.form} onSubmit={handleSubmit}>
                 <Typography variant='h6'>{currentId?'Edit Post':'Create Post'}</Typography>
                 <TextField 

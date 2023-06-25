@@ -17,6 +17,12 @@ const Post = ({ post, setCurrentId }) => {
     const classes = useStyles()
     const user=JSON.parse(localStorage.getItem("profile"))
     useEffect(()=>{},[user])
+    const handleClickScroll=()=>{
+        const element = document.getElementById("createForm");
+        if(element){
+            element.scrollIntoView({behavior:"smooth"});
+        }
+    }
 const Likes=()=>{
     if(post.likes.length>0){
 
@@ -61,7 +67,7 @@ const Likes=()=>{
             {(user?.result?.googleId===post.creator || user?.result?._id === post.creator) && (
                         
                         <Box className={classes.overlay2}>
-                        <IconButton sx={{ color: "white" }} onClick={() => setCurrentId(post._id)}><EditIcon /></IconButton>
+                        <IconButton sx={{ color: "white" }} onClick={() => {setCurrentId(post._id);handleClickScroll();}}><EditIcon /></IconButton>
                     </Box>
 
                     )}
