@@ -8,7 +8,7 @@ import { CircularProgress, Grid,Box } from '@mui/material';
 const Posts = ({setCurrentId}) => {
     const posts = useSelector((state) => (state.posts))
     const classes = useStyles()
-    useEffect(()=>{},posts)
+    useEffect(()=>{},[posts])
 
     // console.log(posts);
     return (

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import useStyles from './styles'
 import { AppBar, Typography, Container, Icon, Box, Button, Grid, Card, Drawer, Toolbar, List, ListItem, ListItemText, Divider, Switch, FormControl, Paper, Tooltip, TextField, CardMedia, CardContent, CardActionArea, IconButton } from '@mui/material'
@@ -16,7 +16,7 @@ const Post = ({ post, setCurrentId }) => {
 
     const classes = useStyles()
     const user=JSON.parse(localStorage.getItem("profile"))
-    
+    useEffect(()=>{},[user])
 const Likes=()=>{
     if(post.likes.length>0){
 
