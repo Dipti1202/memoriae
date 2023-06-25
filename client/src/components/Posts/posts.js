@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Post from './Post/Post';
 import { useSelector } from 'react-redux';
 
@@ -8,6 +8,7 @@ import { CircularProgress, Grid,Box } from '@mui/material';
 const Posts = ({setCurrentId}) => {
     const posts = useSelector((state) => (state.posts))
     const classes = useStyles()
+    useEffect(()=>{},posts)
 
     // console.log(posts);
     return (
