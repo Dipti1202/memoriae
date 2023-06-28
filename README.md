@@ -4,7 +4,7 @@ Memoriae is a social media website, in which we can post, like, delete and updat
 #
 **Technologies**
 <br>
-HTML, CSS, JavaScript, React js, Redux, Node js, OAuth, JSOM web token, MongoDb, Express js, Material UI.
+HTML, CSS, JavaScript, React js, Redux, Node js, OAuth, JSON web token, Mongodb, Express js, Material UI.
 #
 **Features**
 <br><br>
