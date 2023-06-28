@@ -36,6 +36,11 @@ Users can uplaod their own posts.<br>
 <br>
 Users can update their posts by clicking on the edit icon.<br>
 ![edit](https://github.com/Dipti1202/memoriae/assets/78373491/10ea4548-3f56-4d6f-972e-e6c64256835e)
+#
+**Website link**
+<br>
+[Memoriae](https://earnest-crisp-831ad5.netlify.app)
+
 
 
 
