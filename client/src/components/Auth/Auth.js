@@ -115,7 +115,7 @@ const Auth = () => {
             </Grid>
             <Button variant='contained' color='primary' type='submit' fullWidth sx={{ mt: "10px", mb: "10px" }}>{isSignUp ? "Sign Up" : "Sign In"}</Button>
             <GoogleLogin
-              clientId="14128421363-9skk97n519mukj4687gjnnu1duon52ai.apps.googleusercontent.com"
+              clientId={google_id}
               render={(renderProps) => (
                 <Button
                   color='secondary'
