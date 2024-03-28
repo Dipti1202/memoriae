@@ -78,6 +78,7 @@ const darkTheme=createTheme({ palette: { mode: 'dark' } })
                 variant='standard' 
                 fullWidth 
                 label='message'
+                inputProps={{ maxLength: 100 }}
                 value={postData.message}
                 onChange={(e)=>(setPostData({...postData,message:e.target.value}))}></TextField>
                 <TextField 

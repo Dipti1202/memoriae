@@ -9,7 +9,7 @@ import { gapi } from 'gapi-script'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { signin, signup } from '../../actions/auth'
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 
 const initialState = { firstName: '', lastName: '', email: '', password: '', confirmPassword: '' }
 // dotenv.config();
@@ -23,11 +23,11 @@ const Auth = () => {
   const classes = useStyles();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  // const google_id= process.env.GOOGLE_CLIENT_ID;
+  const google_id= process.env.REACT_APP_GOOGLE_CLIENT_ID;
   useEffect(() => {
     function start() {
       gapi.client.init({
-        clientId: "14128421363-9skk97n519mukj4687gjnnu1duon52ai.apps.googleusercontent.com",
+        clientId: google_id,
         scope: 'email',
       });
     }
